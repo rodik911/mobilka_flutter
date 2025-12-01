@@ -1,0 +1,17 @@
+{
+  "name": "Flutter",
+  "image": "cirrusci/flutter:stable",
+  "forwardPorts": [3000],
+  "portsAttributes": {
+    "3000": {
+      "label": "Flutter Web",
+      "onAutoForward": "notify"
+    }
+  },
+  "postCreateCommand": "flutter doctor",
+  "customizations": {
+    "vscode": {
+      "extensions": ["dart-code.flutter"]
+    }
+  }
+}
